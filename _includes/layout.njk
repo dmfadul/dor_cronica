@@ -13,7 +13,7 @@
     </nav>
   </header>
   <main>
-    {{ content | safe }}
+    {% block content %}{% endblock %}
   </main>
   <footer>
     <p>&copy; {{ "now" | date: "%Y" }} Dr. John Doe</p>

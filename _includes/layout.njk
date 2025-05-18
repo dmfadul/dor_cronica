@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1><a href="/">Dr. John Doe</a></h1>
+    <nav>
+      <a href="/">Home</a> | <a href="/about/">About</a>
+    </nav>
+  </header>
+  <main>
+    {{ content | safe }}
+  </main>
+  <footer>
+    <p>&copy; {{ "now" | date: "%Y" }} Dr. John Doe</p>
+  </footer>
+</body>
+</html>

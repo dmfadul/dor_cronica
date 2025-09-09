@@ -7,7 +7,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: ".",           // project root
       includes: "_includes",
-      data: "_data",        // optional (only if you add a _data dir)
+      //data: "_data",        // optional (only if you add a _data dir)
       output: "_site"
     },
     markdownTemplateEngine: "njk",

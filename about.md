@@ -1,6 +1,9 @@
 ---
+title: O Médico
 layout: layout.njk
-title: About
+permalink: /about/
 ---
 
-Dr. John Doe has 20+ years of experience treating patients in Brazil.
+# Dr. Alberto David Fadul Filho
+
+Médico com atuação focada em dor crônica. Atendimento humanizado, diagnóstico preciso e terapias baseadas em evidências para devolver qualidade de vida aos pacientes.

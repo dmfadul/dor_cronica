@@ -1,7 +1,7 @@
 module.exports = function (eleventyConfig) {
   // Pass-through for your global stylesheet and any future assets
   eleventyConfig.addPassthroughCopy("styles.css");
-  eleventyConfig.addPassthroughCopy({"assets": "assets"}); // create later if needed
+  //eleventyConfig.addPassthroughCopy({"assets": "assets"}); // create later if needed
 
   return {
     dir: {

@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ title }}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or "Dr. Alberto David Fadul Filho" }}</title>
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <header>
-    <h1><a href="https://dralbertofadul.com.br/medico-dor-curitiba/#">Dr. Alberto David Fadul Filho</a></h1>
-    <p>Especialista em dor</p>
-    <p>Site em Construção</p>
-    <nav>
-      <a href="/">Home</a> | <a href="/about/">About</a>
-    </nav>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <div class="brand">Dr. Alberto David Fadul Filho</div>
+      <nav class="nav">
+        <a href="/">Início</a>
+        <a href="/about/">O Médico</a>
+        <a href="/#areas">Áreas de Atuação</a>
+        <a href="/#servicos">Serviços</a>
+        <a href="/#depoimentos">Depoimentos</a>
+        <a href="/#contato">Contato</a>
+        <a href="/posts/">Blog</a>
+      </nav>
+    </div>
   </header>
+
   <main>
-    {% block content %}{% endblock %}
+    {{ content | safe }}
   </main>
-  <footer>
-    <p>&copy; 2025 Dr. Alberto David Fadul Filho</p>
+
+  <a class="whatsapp-fab" href="https://wa.me/5541XXXXXXXX" aria-label="WhatsApp">WhatsApp</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Fale conosco</strong><br>
+        (41) 9 9999-9999<br>
+        contato@dralberto.com.br
+      </div>
+      <div>
+        <strong>Menu</strong><br>
+        <a href="/">Início</a> · <a href="/about/">O Médico</a> · <a href="/#areas">Áreas</a> · <a href="/#contato">Contato</a>
+      </div>
+      <div>
+        © {{ "now" | date("yyyy") }} Dr. Alberto David Fadul Filho. Todos os direitos reservados.
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>

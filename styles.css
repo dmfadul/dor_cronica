@@ -441,3 +441,77 @@ footer {
   width: 24px;
   height: 24px;
 }
+
+/* Layout basics */
+:root{
+  --bg:#0f2745;        /* deep blue */
+  --bg2:#1b3b65;       /* lighter blue */
+  --fg:#0e1116;        /* text dark */
+  --muted:#6b7280;
+  --primary:#1e73be;   /* button primary */
+  --accent:#16a34a;    /* whatsapp green */
+  --card:#ffffff;
+  --border:#e5e7eb;
+  --container: 1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif;color:var(--fg);background:#fff}
+
+.container{max-width:var(--container);margin-inline:auto;padding:0 1rem}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--border)}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between;min-height:64px}
+.brand{font-weight:700}
+.nav a{margin-left:1rem;text-decoration:none;color:#111}
+.nav a:hover{text-decoration:underline}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,var(--bg),var(--bg2));color:#fff;padding:64px 0}
+.hero-inner{display:grid;gap:1rem}
+.hero h1{font-size:clamp(28px,5vw,44px);margin:0}
+.cta-row{display:flex;gap:.75rem;flex-wrap:wrap}
+
+/* Buttons */
+.btn{display:inline-block;border-radius:8px;padding:.65rem 1rem;text-decoration:none;border:1px solid transparent}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-outline{background:transparent;border-color:#fff;color:#fff}
+.btn-small{font-size:.875rem;padding:.45rem .75rem}
+
+/* Strips & sections */
+.strip{background:#0f2745;color:#fff;padding:32px 0}
+.section{padding:48px 0}
+.section.alt{background:#f8fafc}
+.section h2{margin:0 0 1rem 0}
+
+/* MVV */
+.mvv{display:grid;gap:1rem}
+.mvv>div{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:1rem}
+.mvv h3{margin:.25rem 0 .5rem}
+
+/* Cards */
+.cards{display:grid;gap:1rem}
+@media(min-width:720px){.cards{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem}
+.card h3{margin-top:0}
+
+/* Quote */
+.quote{border-left:4px solid var(--primary);padding:1rem;margin:0;background:#fff;border-radius:8px}
+
+/* Contact */
+.contact-form{display:grid;gap:.75rem;max-width:680px}
+.contact-form input,.contact-form textarea{width:100%;border:1px solid var(--border);border-radius:8px;padding:.6rem}
+.contact-form button{align-self:start}
+
+/* Footer */
+.site-footer{background:#0f2745;color:#fff;padding:28px 0;margin-top:32px}
+.footer-grid{display:grid;gap:1rem}
+.footer-grid a{color:#fff}
+
+/* WhatsApp FAB */
+.whatsapp-fab{
+  position:fixed;right:16px;bottom:16px;background:var(--accent);color:#fff;
+  border-radius:999px;padding:.8rem 1rem;text-decoration:none;border:0;font-weight:600;
+  box-shadow:0 10px 20px rgba(0,0,0,.18);
+}
+.whatsapp-fab:hover{filter:brightness(1.05)}

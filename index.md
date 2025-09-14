@@ -9,7 +9,7 @@ layout: layout.njk
     <p>Atendimento humanizado e tratamento atualizado para dor neuropática, lombalgia, fibromialgia, cefaleias crônicas e mais.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#contato">Entre em contato</a>
-      <a class="btn btn-outline" href="https://wa.me/5541XXXXXXXX">WhatsApp</a>
+      <a class="btn btn-outline" href="https://wa.me/554131236550">WhatsApp</a>
     </div>
   </div>
 </section>

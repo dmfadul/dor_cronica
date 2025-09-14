@@ -18,7 +18,7 @@ layout: layout.njk
   <div class="container mvv">
     <div>
       <h3>Visão</h3>
-      <p>Ser referência em atendimento humanizado para pacientes com dor crônica, com empatia e clareza.</p>
+      <p>Somos referência em atendimento humanizado para pacientes com dor crônica, com empatia e clareza.</p>
     </div>
     <div>
       <h3>Missão</h3>

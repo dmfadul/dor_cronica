@@ -6,7 +6,7 @@ layout: layout.njk
 <section class="hero">
   <div class="container hero-inner">
     <h1>Especialista em Dor</h1>
-    <p>Atendimento humanizado e tratamento moderno para dor neuropática, lombalgia, fibromialgia, cefaleias crônicas e mais.</p>
+    <p>Atendimento humanizado e tratamento atualizado para dor neuropática, lombalgia, fibromialgia, cefaleias crônicas e mais.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#contato">Entre em contato</a>
       <a class="btn btn-outline" href="https://wa.me/5541XXXXXXXX">WhatsApp</a>
@@ -38,7 +38,7 @@ layout: layout.njk
 
 <section id="areas" class="section">
   <div class="container">
-    <h2>Áreas de Atuação</h2>
+    <h2>Algumas condições que tratamos</h2>
     <div class="cards">
       <article class="card">
         <h3>Dor Neuropática</h3>
@@ -66,7 +66,7 @@ layout: layout.njk
     <div class="cards">
       <article class="card">
         <h3>Consultas</h3>
-        <p>Presencial e telemedicina, com plano terapêutico individual.</p>
+        <p>Presencial, com planejamento terapêutico individual.</p>
         <a class="btn btn-small" href="#contato">Agendar</a>
       </article>
       <article class="card">

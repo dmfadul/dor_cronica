@@ -17,20 +17,20 @@ layout: layout.njk
 <section class="strip">
   <div class="container mvv">
     <div>
-      <h3>Visão</h3>
-      <p>Somos referência em atendimento humanizado para pacientes com dor crônica, com empatia e clareza.</p>
+      <h3>Quem queremos ser</h3>
+      <p>Um espaço de confiança para quem convive com dor crônica, onde o cuidado é construído com empatia e resultados reais.</p>
     </div>
     <div>
-      <h3>Missão</h3>
-      <p>Devolver qualidade de vida com diagnósticos precisos e terapias baseadas em evidências.</p>
+      <h3>O que fazemos</h3>
+      <p>Unimos ciência e escuta atenta para oferecer diagnósticos precisos e terapias seguras, sempre com foco na autonomia e qualidade de vida.</p>
     </div>
     <div>
-      <h3>Valores</h3>
+      <h3>O que nos guia</h3>
       <ul>
-        <li>Humanização e empatia</li>
-        <li>Informação clara</li>
-        <li>Tratamento personalizado</li>
-        <li>Responsabilidade social</li>
+        <li>Empatia e acolhimento – estar próximo em cada etapa da jornada.</li>
+        <li>Clareza – explicar de forma simples e transparente.</li>
+        <li>Tratamento sob medida – porque cada pessoa vive a dor de um jeito único.</li>
+        <li>Compromisso social – atuar com responsabilidade além do consultório.</li>
       </ul>
     </div>
   </div>

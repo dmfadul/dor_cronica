@@ -4,6 +4,6 @@ layout: layout.njk
 permalink: /about/
 ---
 
-# Dr. Alberto David Fadul Filho
+# Dr. Alberto Fadul
 
 Médico com atuação focada em dor crônica. Atendimento humanizado, diagnóstico preciso e terapias baseadas em evidências para devolver qualidade de vida aos pacientes.

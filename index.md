@@ -5,7 +5,7 @@ layout: layout.njk
 
 <section class="hero">
   <div class="container hero-inner">
-    <h1>Especialista em Dor Crônica</h1>
+    <h1>Especialista em Dor</h1>
     <p>Atendimento humanizado e tratamento moderno para dor neuropática, lombalgia, fibromialgia, cefaleias crônicas e mais.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="#contato">Entre em contato</a>

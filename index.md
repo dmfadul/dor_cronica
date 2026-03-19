@@ -104,8 +104,8 @@ layout: layout.njk
 <section id="contato" class="section">
   <div class="container contact">
     <h2>Contato</h2>
-    <strong>E-mail:</strong>adfadul@gmail.com.br</p>
-    <p><strong>Telefones:</strong>
+    <strong>E-mail:</strong>adfadul@gmail.com.br
+    <strong>Telefones:</strong>
     (41)99516-4766
     (41)3123-6550
     (41)99177-1979

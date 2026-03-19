@@ -106,9 +106,7 @@ layout: layout.njk
     <h2>Contato</h2>
     <strong>E-mail:</strong>adfadul@gmail.com.br
     <strong>Telefones:</strong>
-    (41)99516-4766
-    (41)3123-6550
-    (41)99177-1979
+    (41)99516-4766 · (41)3123-6550 · (41)99177-1979
     <form class="contact-form" action="#" method="post">
       <label>Nome<br><input type="text" name="nome" required></label>
       <label>E-mail<br><input type="email" name="email" required></label>

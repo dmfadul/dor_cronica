@@ -1,8 +1,36 @@
-{% extends "layout.njk" %}
-{% block content %}
-<article>
-  <h2>{{ title }}</h2>
-  <p><em>{{ date }}</em></p>
-  {{ content | safe }}
+---
+layout: layout.njk
+---
+
+<article class="post-page">
+  <header class="post-header">
+    <div class="container reading-width">
+      <nav class="breadcrumb" aria-label="Navegação estrutural">
+        <a href="/">Início</a>
+        <span aria-hidden="true">/</span>
+        <a href="/posts/">Artigos</a>
+      </nav>
+      <p class="eyebrow">Saúde e tratamento da dor</p>
+      <h1>{{ title }}</h1>
+      {% if description %}<p class="post-description">{{ description }}</p>{% endif %}
+      {% if not blogIndex %}<p class="post-meta">
+        <span>Por Dr. Alberto Fadul</span>
+        {% if date %}<span aria-hidden="true">•</span><time datetime="{{ page.date.toISOString() }}">{{ date | readableDate }}</time>{% endif %}
+      </p>{% endif %}
+    </div>
+  </header>
+
+  <div class="container reading-width post-body">
+    {{ content | safe }}
+
+    {% if not blogIndex %}<aside class="medical-note" aria-label="Aviso médico">
+      <strong>Informação com responsabilidade</strong>
+      <p>Este conteúdo é educativo e não substitui uma avaliação médica individualizada.</p>
+    </aside>{% endif %}
+
+    <nav class="post-footer-nav" aria-label="Navegação dos artigos">
+      {% if not blogIndex %}<a href="/posts/">← Ver todos os artigos</a>{% else %}<span>Precisa de uma avaliação individual?</span>{% endif %}
+      <a class="btn btn-primary" href="/#contato">Agendar uma consulta</a>
+    </nav>
+  </div>
 </article>
-{% endblock %}

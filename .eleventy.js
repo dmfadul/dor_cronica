@@ -1,6 +1,15 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles.css");
 
+  eleventyConfig.addFilter("readableDate", (date) => {
+    return new Intl.DateTimeFormat("pt-BR", {
+      day: "2-digit",
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC"
+    }).format(date);
+  });
+
   return {
     dir: {
       input: ".",

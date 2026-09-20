@@ -8,10 +8,6 @@ tags: post
 
 ---
 
-# Cefaleia, Enxaqueca, Dor Facial e Dor Cervical
-
-**Entenda as causas, o diagnóstico e as opções de tratamento baseadas em evidências científicas.**
-
 ## O que são cefaleia, enxaqueca, dor facial e dor cervical?
 
 Cefaleia é o termo médico para dor de cabeça e reúne mais de 150 tipos diferentes, classificados pela Sociedade Internacional de Cefaleia em **primárias**, quando a dor de cabeça é a própria doença, e **secundárias**, quando ela é sintoma de outra condição, como sinusite, problema na coluna cervical ou alteração na articulação temporomandibular.

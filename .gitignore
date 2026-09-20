@@ -1,0 +1,11 @@
+# Dependencies
+node_modules/
+
+# Eleventy generated site
+_site/
+
+# Environment variables
+.env
+
+# OS/editor junk
+.DS_Store

@@ -4,13 +4,7 @@ layout: post.njk
 title: "Cefaleia, Enxaqueca, Dor Facial e Dor Cervical"
 description: "Entenda as causas, o diagnóstico e as opções de tratamento para cefaleia, enxaqueca, dor facial e dor cervical com base em evidências científicas."
 date: 2026-09-19
-tags:
-
-* posts
-* cefaleia
-* enxaqueca
-* dor facial
-* dor cervical
+tags: post
 
 ---
 

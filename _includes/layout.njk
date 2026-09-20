@@ -10,8 +10,12 @@
 
   <header class="site-header">
     <div class="container nav-wrap">
-      <div class="brand">Dr. Alberto Fadul</div>
-      <nav class="nav">
+      <a class="brand" href="/" aria-label="Dr. Alberto Fadul — página inicial">Dr. Alberto Fadul</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Abrir menu</span>
+        <span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="site-nav" aria-label="Navegação principal">
         <a href="/about/">O Médico</a>
         <a href="/#areas">O que Tratamos</a>
         <a href="/#servicos">Serviços</a>
@@ -46,6 +50,39 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const menuButton = document.querySelector('.nav-toggle');
+    const menu = document.querySelector('#site-nav');
+
+    function closeMenu() {
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.querySelector('.sr-only').textContent = 'Abrir menu';
+      menu.classList.remove('is-open');
+    }
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+      menuButton.setAttribute('aria-expanded', String(!isOpen));
+      menuButton.querySelector('.sr-only').textContent = isOpen ? 'Abrir menu' : 'Fechar menu';
+      menu.classList.toggle('is-open', !isOpen);
+    });
+
+    menu.addEventListener('click', (event) => {
+      if (event.target.closest('a')) closeMenu();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+        menuButton.focus();
+      }
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 720) closeMenu();
+    });
+  </script>
 
 </body>
 </html>
